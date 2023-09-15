@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.CreateTeamController">
+   <children>
+      <ImageView fx:id="backgroundcreateteamImageView" fitHeight="607.0" fitWidth="800.0" layoutX="-139.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="eventNameLabel" layoutX="61.0" layoutY="55.0">
+         <font>
+            <Font name="Century" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="449.0" layoutY="55.0" text="Create Team">
+         <font>
+            <Font name="Century" size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="724.0" layoutY="22.0" mnemonicParsing="false" onAction="#backToCreatorEventButton" text="Cancel" />
+      <Label layoutX="321.0" layoutY="164.0" text="Name of Team:">
+         <font>
+            <Font name="Century" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorTeamNameLabel" layoutX="321.0" layoutY="451.0" prefHeight="70.0" prefWidth="299.0" textFill="#e10a0a">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="321.0" layoutY="250.0" text="Max Total Members:">
+         <font>
+            <Font name="Century" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="321.0" layoutY="332.0" text="Start Accepting Member Date:">
+         <font>
+            <Font name="Century" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="321.0" layoutY="404.0" text="Due Accepting Member Date:">
+         <font>
+            <Font name="Century" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="teamNameTextField" layoutX="606.0" layoutY="163.0" />
+      <TextField fx:id="maxMemberTextField" layoutX="606.0" layoutY="249.0" />
+      <DatePicker fx:id="startAcceptDatePicker" editable="false" layoutX="606.0" layoutY="330.0" onAction="#startAcceptSelectDate" prefHeight="26.0" prefWidth="150.0" promptText="Select Date" />
+      <DatePicker fx:id="dueAcceptDatePicker" editable="false" layoutX="605.0" layoutY="402.0" onAction="#dueAcceptSelectDate" prefHeight="26.0" prefWidth="150.0" promptText="Select Date" />
+      <Button layoutX="633.0" layoutY="468.0" mnemonicParsing="false" onAction="#toTeamPageButton" prefHeight="36.0" prefWidth="94.0" text="Create Team!" />
+   </children>
+</AnchorPane>

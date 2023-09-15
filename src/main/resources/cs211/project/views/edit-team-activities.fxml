@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.EditTeamsActivityController">
+    <children>
+        <ImageView fx:id="backgroundImageView" fitHeight="607.0" fitWidth="800.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true" />
+        <Label layoutX="40.0" layoutY="38.0" text="Edit Team’s Activities">
+            <font>
+                <Font name="Century" size="36.0" />
+            </font>
+        </Label>
+        <ListView layoutX="14.0" layoutY="147.0" prefHeight="359.0" prefWidth="200.0" />
+        <Label layoutX="56.0" layoutY="118.0" text="Choose Team ">
+            <font>
+                <Font name="Century" size="18.0" />
+            </font>
+        </Label>
+        <ListView layoutX="235.0" layoutY="147.0" prefHeight="359.0" prefWidth="200.0" />
+        <Label layoutX="269.0" layoutY="118.0" text="Choose Activity">
+            <font>
+                <Font name="Century" size="18.0" />
+            </font>
+        </Label>
+        <Button layoutX="506.0" layoutY="117.0" mnemonicParsing="false" text="Delete Activity" />
+        <Button layoutX="660.0" layoutY="117.0" mnemonicParsing="false" text="Add Activity" />
+        <Label layoutX="579.0" layoutY="182.0" text="Add Activity">
+            <font>
+                <Font name="Century" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="461.0" layoutY="235.0" text="Activity's Name:">
+            <font>
+                <Font name="Century" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="461.0" layoutY="303.0" text="Activity's Details:">
+            <font>
+                <Font name="Century" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="459.0" layoutY="369.0" text="Start Date:">
+            <font>
+                <Font name="Century" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="459.0" layoutY="431.0" text="Due Date:">
+            <font>
+                <Font name="Century" size="18.0" />
+            </font>
+        </Label>
+        <DatePicker fx:id="startDatePicker" editable="false" layoutX="640.0" layoutY="368.0" onAction="#startSelectDate" prefHeight="26.0" prefWidth="130.0" promptText="Select Date" />
+        <DatePicker fx:id="dueDatePicker" editable="false" layoutX="640.0" layoutY="429.0" onAction="#dueSelectDate" prefHeight="26.0" prefWidth="130.0" promptText="Select Date" />
+        <TextField layoutX="640.0" layoutY="233.0" prefHeight="26.0" prefWidth="130.0" />
+        <TextField layoutX="640.0" layoutY="301.0" prefHeight="26.0" prefWidth="130.0" />
+        <Button layoutX="599.0" layoutY="494.0" mnemonicParsing="false" text="Add" />
+        <Button layoutX="729.0" layoutY="25.0" mnemonicParsing="false" onAction="#backtolistofteam" text="Back" />
+    </children>
+</AnchorPane>
